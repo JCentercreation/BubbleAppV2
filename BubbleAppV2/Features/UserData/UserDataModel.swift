@@ -14,6 +14,11 @@ class UserDataModel: ObservableObject {
     init(userConversation: [MessageType]) {
         self.userConversation = userConversation
     }
+    
+    func eraseUserConversation() {
+        self.userConversation.removeAll()
+    }
+    
 }
 
 struct MessageType: Hashable {

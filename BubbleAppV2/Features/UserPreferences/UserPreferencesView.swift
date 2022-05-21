@@ -10,6 +10,9 @@ import SwiftUI
 struct UserPreferencesView: View {
     
     @EnvironmentObject private var userPreferences: UserPreferencesModel
+    @EnvironmentObject private var userData: UserDataModel
+    
+    @State private var showEraseConversationAlert: Bool = false
     
     var body: some View {
         VStack {
@@ -25,9 +28,25 @@ struct UserPreferencesView: View {
                         }
                 }.pickerStyle(.segmented)
                 ColorPicker(NSLocalizedString("BubbleApp.features.userpreferences.backgroundcolor.colorpicker.title", comment: ""), selection: $userPreferences.backgroundColor)
+                Button {
+                    showEraseConversationAlert = true
+                } label: {
+                    Text(NSLocalizedString("BubbleApp.features.userpreferences.eraseConversation.button.title", comment: ""))
+                }
+
             }.padding()
         }
         .background(Color.gray)
+        .alert(isPresented: $showEraseConversationAlert) {
+            Alert(
+                title: Text(NSLocalizedString("BubbleApp.features.userpreferences.eraseConversation.alert.title", comment: "")),
+                message: Text(NSLocalizedString("BubbleApp.features.userpreferences.eraseConversation.alert.message", comment: "")),
+                primaryButton: .destructive(Text(NSLocalizedString("BubbleApp.features.userpreferences.eraseConversation.alert.confirmButton", comment: ""))) {
+                    userData.eraseUserConversation()
+                },
+                secondaryButton: .cancel())
+        }
+        
     }
 }
 

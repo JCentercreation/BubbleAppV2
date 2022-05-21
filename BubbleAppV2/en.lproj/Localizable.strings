@@ -10,3 +10,7 @@
 "BubbleApp.features.userpreferences.numberconversations.picker.title" = "Number of conversations";
 "BubbleApp.features.userpreferences.backgroundcolor.colorpicker.title" = "Background color";
 "BubbleApp.features.conversationpanel.conversationtextfieldview.textfield.text" = "Write your message here";
+"BubbleApp.features.userpreferences.eraseConversation.button.title" = "Erase conversation";
+"BubbleApp.features.userpreferences.eraseConversation.alert.title" = "Erase Conversation";
+"BubbleApp.features.userpreferences.eraseConversation.alert.message" = "Do you really want to erase all the messages of this conversation?";
+"BubbleApp.features.userpreferences.eraseConversation.alert.confirmButton" = "Erase All";
