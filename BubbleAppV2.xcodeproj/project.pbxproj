@@ -144,7 +144,7 @@
 		9919937D28394327007C9708 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9919937E28394354007C9708 /* BubbleShapes.swift */,
+				9919938E283949C9007C9708 /* Bubbles */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,6 +172,14 @@
 				9919938C28394849007C9708 /* Localizable.string.strings */,
 			);
 			path = Localizables;
+			sourceTree = "<group>";
+		};
+		9919938E283949C9007C9708 /* Bubbles */ = {
+			isa = PBXGroup;
+			children = (
+				9919937E28394354007C9708 /* BubbleShapes.swift */,
+			);
+			path = Bubbles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
