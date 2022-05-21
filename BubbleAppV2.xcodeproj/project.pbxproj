@@ -16,6 +16,7 @@
 		9919937128394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937028394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift */; };
 		9919937F28394354007C9708 /* BubbleShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937E28394354007C9708 /* BubbleShapes.swift */; };
 		9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938328394433007C9708 /* UserPreferencesModel.swift */; };
+		9919938628394588007C9708 /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938528394588007C9708 /* UserPreferencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9919937028394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAppV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9919937E28394354007C9708 /* BubbleShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShapes.swift; sourceTree = "<group>"; };
 		9919938328394433007C9708 /* UserPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
+		9919938528394588007C9708 /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9919938328394433007C9708 /* UserPreferencesModel.swift */,
+				9919938528394588007C9708 /* UserPreferencesView.swift */,
 			);
 			path = UserPreferences;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				9919935528394295007C9708 /* ContentView.swift in Sources */,
 				9919937F28394354007C9708 /* BubbleShapes.swift in Sources */,
+				9919938628394588007C9708 /* UserPreferencesView.swift in Sources */,
 				9919935328394295007C9708 /* BubbleAppV2App.swift in Sources */,
 				9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */,
 			);

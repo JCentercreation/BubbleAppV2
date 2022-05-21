@@ -10,16 +10,14 @@ import SwiftUI
 
 class UserPreferencesModel: ObservableObject {
     @Published var numberOfConversations: Int
-    @Published var singleConversationContentViewType: BubbleType
-    @Published var singleConversationNumberMessages: Int
+    @Published var numberOfMessages: Int
     @Published var leftContentViewType: BubbleType
     @Published var rightContentViewType: BubbleType
     @Published var backgroundColor: Color
     
-    init(numberOfConversations: Int, singleConversationContentViewType: BubbleType, singleConversationNumberMessages: Int, leftContentViewType: BubbleType, rightContentViewType: BubbleType, backgroundColor: Color) {
+    init(numberOfConversations: Int, numberOfMessages: Int, leftContentViewType: BubbleType, rightContentViewType: BubbleType, backgroundColor: Color) {
         self.numberOfConversations = numberOfConversations
-        self.singleConversationContentViewType = singleConversationContentViewType
-        self.singleConversationNumberMessages = singleConversationNumberMessages
+        self.numberOfMessages = numberOfMessages
         self.leftContentViewType = leftContentViewType
         self.rightContentViewType = rightContentViewType
         self.backgroundColor = backgroundColor
