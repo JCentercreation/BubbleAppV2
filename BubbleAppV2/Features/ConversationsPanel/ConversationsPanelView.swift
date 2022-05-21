@@ -14,8 +14,8 @@ struct ConversationsPanelView: View {
     @EnvironmentObject private var userData: UserDataModel
     
     var body: some View {
-        VStack {
-            ScrollView {
+        ScrollViewReader { verticalPosition in
+            ScrollView(.vertical) {
                 Spacer()
                 if userData.userConversation.count <= userPreferences.numberOfMessages {
                     ForEach(userData.userConversation, id: \.self) { message in
@@ -30,17 +30,18 @@ struct ConversationsPanelView: View {
                                 BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
                             }
                         }
+                    }.onChange(of: userData.userConversation) { newValue in
+                    verticalPosition.scrollTo(userData.userConversation[userData.userConversation.endIndex - 1], anchor: .top)
                     }
                 } else {
                     ForEach(userData.userConversation[(userData.userConversation.count - userPreferences.numberOfMessages - 1)..<userData.userConversation.count], id: \.self) { message in
                         BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+                    }.onChange(of: userData.userConversation) { newValue in
+                    verticalPosition.scrollTo(userData.userConversation[userData.userConversation.endIndex - 1], anchor: .top)
                     }
                 }
-            }
-
-            ConversationTextFieldView()
-            UserPreferencesView()
-        }.background(userPreferences.backgroundColor)
+            }.background(userPreferences.backgroundColor)
+        }
     }
 }
 
