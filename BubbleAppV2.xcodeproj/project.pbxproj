@@ -17,7 +17,7 @@
 		9919937F28394354007C9708 /* BubbleShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937E28394354007C9708 /* BubbleShapes.swift */; };
 		9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938328394433007C9708 /* UserPreferencesModel.swift */; };
 		9919938628394588007C9708 /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938528394588007C9708 /* UserPreferencesView.swift */; };
-		9919938A28394849007C9708 /* Localizable.string.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919938C28394849007C9708 /* Localizable.string.strings */; };
+		9919938A28394849007C9708 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919938C28394849007C9708 /* Localizable.strings */; };
 		99199390283949F5007C9708 /* BubbleMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938F283949F5007C9708 /* BubbleMessageView.swift */; };
 		9919939228394A31007C9708 /* BubbleMessageSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939128394A31007C9708 /* BubbleMessageSentView.swift */; };
 		9919939528394BBA007C9708 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939428394BBA007C9708 /* UserDataModel.swift */; };
@@ -57,8 +57,8 @@
 		9919937E28394354007C9708 /* BubbleShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShapes.swift; sourceTree = "<group>"; };
 		9919938328394433007C9708 /* UserPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
 		9919938528394588007C9708 /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
-		9919938B28394849007C9708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.string.strings; sourceTree = "<group>"; };
-		9919938D2839484A007C9708 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.string.strings; sourceTree = "<group>"; };
+		9919938B28394849007C9708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9919938D2839484A007C9708 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9919938F283949F5007C9708 /* BubbleMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMessageView.swift; sourceTree = "<group>"; };
 		9919939128394A31007C9708 /* BubbleMessageSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMessageSentView.swift; sourceTree = "<group>"; };
 		9919939428394BBA007C9708 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		9919935128394295007C9708 /* BubbleAppV2 */ = {
 			isa = PBXGroup;
 			children = (
-				991993872839481E007C9708 /* Localizables */,
+				9919938C28394849007C9708 /* Localizable.strings */,
 				99199380283943CC007C9708 /* Features */,
 				9919937D28394327007C9708 /* Components */,
 				9919935228394295007C9708 /* BubbleAppV2App.swift */,
@@ -176,14 +176,6 @@
 				9919938528394588007C9708 /* UserPreferencesView.swift */,
 			);
 			path = UserPreferences;
-			sourceTree = "<group>";
-		};
-		991993872839481E007C9708 /* Localizables */ = {
-			isa = PBXGroup;
-			children = (
-				9919938C28394849007C9708 /* Localizable.string.strings */,
-			);
-			path = Localizables;
 			sourceTree = "<group>";
 		};
 		9919938E283949C9007C9708 /* Bubbles */ = {
@@ -319,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9919935A28394296007C9708 /* Preview Assets.xcassets in Resources */,
-				9919938A28394849007C9708 /* Localizable.string.strings in Resources */,
+				9919938A28394849007C9708 /* Localizable.strings in Resources */,
 				9919935728394296007C9708 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,13 +383,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9919938C28394849007C9708 /* Localizable.string.strings */ = {
+		9919938C28394849007C9708 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9919938B28394849007C9708 /* en */,
 				9919938D2839484A007C9708 /* es */,
 			);
-			name = Localizable.string.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

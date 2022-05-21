@@ -21,7 +21,7 @@ struct ConversationTextFieldView: View {
             if userPreferences.numberOfConversations < 1 {
                 VStack {
                     BubbleMessageView(message: $messageLeft.content, bubbleType: .left)
-                    TextField("Write your message here", text:  $messageLeft.content)
+                    TextField(NSLocalizedString("BubbleApp.features.conversationpanel.conversationtextfieldview.textfield.text", comment: ""), text:  $messageLeft.content)
                         .foregroundColor(.white)
                         .background(.black)
                         .cornerRadius(15)
@@ -38,7 +38,7 @@ struct ConversationTextFieldView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         BubbleMessageView(message: $messageLeft.content, bubbleType: .left)
-                        TextField("Write your message here", text:  $messageLeft.content)
+                        TextField(NSLocalizedString("BubbleApp.features.conversationpanel.conversationtextfieldview.textfield.text", comment: ""), text:  $messageLeft.content)
                             .foregroundColor(.white)
                             .background(.black)
                             .cornerRadius(15)
@@ -54,7 +54,7 @@ struct ConversationTextFieldView: View {
                     }
                     VStack(alignment: .trailing) {
                         BubbleMessageView(message: $messageRight.content, bubbleType: .right)
-                        TextField("Write your message here", text:  $messageRight.content)
+                        TextField(NSLocalizedString("BubbleApp.features.conversationpanel.conversationtextfieldview.textfield.text", comment: ""), text:  $messageRight.content)
                             .foregroundColor(.white)
                             .background(.black)
                             .cornerRadius(15)
