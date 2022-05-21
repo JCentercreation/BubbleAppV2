@@ -9,9 +9,20 @@ import Foundation
 import SwiftUI
 
 class UserDataModel: ObservableObject {
-    @Published var userConversation: [String]
+    @Published var userConversation: [MessageType]
     
-    init(userConversation: [String]) {
+    init(userConversation: [MessageType]) {
         self.userConversation = userConversation
     }
+}
+
+struct MessageType: Hashable {
+    var content: String
+    var messageType: BubbleType
+    
+    init(content: String, messageType: BubbleType) {
+        self.content = content
+        self.messageType = messageType
+    }
+    
 }
