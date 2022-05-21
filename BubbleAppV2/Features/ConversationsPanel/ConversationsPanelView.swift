@@ -31,12 +31,14 @@ struct ConversationsPanelView: View {
                     }
                 }
             } else {
-                ForEach(userData.userConversation[(userData.userConversation.count - userPreferences.numberOfMessages)..<userData.userConversation.count], id: \.self) { message in
+                ForEach(userData.userConversation[(userData.userConversation.count - userPreferences.numberOfMessages - 1)..<userData.userConversation.count], id: \.self) { message in
                     BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
                 }
             }
             Spacer()
-        }
+            ConversationTextFieldView()
+            UserPreferencesView()
+        }.background(userPreferences.backgroundColor)
     }
 }
 

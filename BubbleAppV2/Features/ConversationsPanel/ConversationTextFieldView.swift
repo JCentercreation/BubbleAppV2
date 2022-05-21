@@ -18,7 +18,7 @@ struct ConversationTextFieldView: View {
     
     var body: some View {
         VStack {
-            if userPreferences.numberOfConversations <= 1 {
+            if userPreferences.numberOfConversations < 1 {
                 VStack {
                     BubbleMessageView(message: $messageLeft.content, bubbleType: .left)
                     TextField("Write your message here", text:  $messageLeft.content)
