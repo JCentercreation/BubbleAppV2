@@ -14,17 +14,17 @@ struct UserPreferencesView: View {
     var body: some View {
         VStack {
             HStack {
-                Picker("Number of messages", selection: $userPreferences.numberOfMessages) {
+                Picker(NSLocalizedString("BubbleApp.features.userpreferences.numbermessages.picker.title", comment: ""), selection: $userPreferences.numberOfMessages) {
                         ForEach(1 ..< 10) {
                             Text("\($0)")
                         }
                 }
-                Picker("Number of conversations", selection: $userPreferences.numberOfConversations) {
+                Picker(NSLocalizedString("BubbleApp.features.userpreferences.numberconversations.picker.title", comment: ""), selection: $userPreferences.numberOfConversations) {
                         ForEach(1 ..< 3) {
                             Text("\($0)")
                         }
                 }.pickerStyle(.segmented)
-                ColorPicker("Background color", selection: $userPreferences.backgroundColor)
+                ColorPicker(NSLocalizedString("BubbleApp.features.userpreferences.backgroundcolot.colorpicker.title", comment: ""), selection: $userPreferences.backgroundColor)
             }.padding()
         }
         .background(Color.gray)

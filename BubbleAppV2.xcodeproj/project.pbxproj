@@ -17,6 +17,7 @@
 		9919937F28394354007C9708 /* BubbleShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937E28394354007C9708 /* BubbleShapes.swift */; };
 		9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938328394433007C9708 /* UserPreferencesModel.swift */; };
 		9919938628394588007C9708 /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938528394588007C9708 /* UserPreferencesView.swift */; };
+		9919938A28394849007C9708 /* Localizable.string.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919938C28394849007C9708 /* Localizable.string.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9919937E28394354007C9708 /* BubbleShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShapes.swift; sourceTree = "<group>"; };
 		9919938328394433007C9708 /* UserPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
 		9919938528394588007C9708 /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
+		9919938B28394849007C9708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.string.strings; sourceTree = "<group>"; };
+		9919938D2839484A007C9708 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.string.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		9919935128394295007C9708 /* BubbleAppV2 */ = {
 			isa = PBXGroup;
 			children = (
+				991993872839481E007C9708 /* Localizables */,
 				99199380283943CC007C9708 /* Features */,
 				9919937D28394327007C9708 /* Components */,
 				9919935228394295007C9708 /* BubbleAppV2App.swift */,
@@ -160,6 +164,14 @@
 				9919938528394588007C9708 /* UserPreferencesView.swift */,
 			);
 			path = UserPreferences;
+			sourceTree = "<group>";
+		};
+		991993872839481E007C9708 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				9919938C28394849007C9708 /* Localizable.string.strings */,
+			);
+			path = Localizables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 9919934628394295007C9708;
 			productRefGroup = 9919935028394295007C9708 /* Products */;
@@ -267,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9919935A28394296007C9708 /* Preview Assets.xcassets in Resources */,
+				9919938A28394849007C9708 /* Localizable.string.strings in Resources */,
 				9919935728394296007C9708 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +345,18 @@
 			targetProxy = 9919936B28394296007C9708 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9919938C28394849007C9708 /* Localizable.string.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9919938B28394849007C9708 /* en */,
+				9919938D2839484A007C9708 /* es */,
+			);
+			name = Localizable.string.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9919937228394296007C9708 /* Debug */ = {
