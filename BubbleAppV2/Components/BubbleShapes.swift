@@ -8,6 +8,11 @@
 import Foundation
 import SwiftUI
 
+enum BubbleType {
+    case left
+    case right
+}
+
 struct BubbleLeftShape: Shape {
     func path(in rect: CGRect) -> Path {
         return getLeftBubblePath(in: rect)

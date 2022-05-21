@@ -15,6 +15,7 @@
 		9919936F28394296007C9708 /* BubbleAppV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919936E28394296007C9708 /* BubbleAppV2UITests.swift */; };
 		9919937128394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937028394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift */; };
 		9919937F28394354007C9708 /* BubbleShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919937E28394354007C9708 /* BubbleShapes.swift */; };
+		9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938328394433007C9708 /* UserPreferencesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9919936E28394296007C9708 /* BubbleAppV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAppV2UITests.swift; sourceTree = "<group>"; };
 		9919937028394296007C9708 /* BubbleAppV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAppV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9919937E28394354007C9708 /* BubbleShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShapes.swift; sourceTree = "<group>"; };
+		9919938328394433007C9708 /* UserPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		9919935128394295007C9708 /* BubbleAppV2 */ = {
 			isa = PBXGroup;
 			children = (
+				99199380283943CC007C9708 /* Features */,
 				9919937D28394327007C9708 /* Components */,
 				9919935228394295007C9708 /* BubbleAppV2App.swift */,
 				9919935428394295007C9708 /* ContentView.swift */,
@@ -138,6 +141,22 @@
 				9919937E28394354007C9708 /* BubbleShapes.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		99199380283943CC007C9708 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				99199381283943DC007C9708 /* UserPreferences */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		99199381283943DC007C9708 /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				9919938328394433007C9708 /* UserPreferencesModel.swift */,
+			);
+			path = UserPreferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +292,7 @@
 				9919935528394295007C9708 /* ContentView.swift in Sources */,
 				9919937F28394354007C9708 /* BubbleShapes.swift in Sources */,
 				9919935328394295007C9708 /* BubbleAppV2App.swift in Sources */,
+				9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
