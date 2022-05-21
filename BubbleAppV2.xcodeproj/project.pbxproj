@@ -22,6 +22,7 @@
 		9919939228394A31007C9708 /* BubbleMessageSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939128394A31007C9708 /* BubbleMessageSentView.swift */; };
 		9919939528394BBA007C9708 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939428394BBA007C9708 /* UserDataModel.swift */; };
 		9919939828394D0B007C9708 /* ConversationsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939728394D0B007C9708 /* ConversationsPanelView.swift */; };
+		9919939A283952A0007C9708 /* ConversationTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99199399283952A0007C9708 /* ConversationTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		9919939128394A31007C9708 /* BubbleMessageSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMessageSentView.swift; sourceTree = "<group>"; };
 		9919939428394BBA007C9708 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		9919939728394D0B007C9708 /* ConversationsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsPanelView.swift; sourceTree = "<group>"; };
+		99199399283952A0007C9708 /* ConversationTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				9919939728394D0B007C9708 /* ConversationsPanelView.swift */,
+				99199399283952A0007C9708 /* ConversationTextFieldView.swift */,
 			);
 			path = ConversationsPanel;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				9919935328394295007C9708 /* BubbleAppV2App.swift in Sources */,
 				9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */,
 				99199390283949F5007C9708 /* BubbleMessageView.swift in Sources */,
+				9919939A283952A0007C9708 /* ConversationTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

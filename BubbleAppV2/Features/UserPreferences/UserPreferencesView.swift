@@ -24,7 +24,7 @@ struct UserPreferencesView: View {
                             Text("\($0)")
                         }
                 }.pickerStyle(.segmented)
-                ColorPicker(NSLocalizedString("BubbleApp.features.userpreferences.backgroundcolot.colorpicker.title", comment: ""), selection: $userPreferences.backgroundColor)
+                ColorPicker(NSLocalizedString("BubbleApp.features.userpreferences.backgroundcolor.colorpicker.title", comment: ""), selection: $userPreferences.backgroundColor)
             }.padding()
         }
         .background(Color.gray)

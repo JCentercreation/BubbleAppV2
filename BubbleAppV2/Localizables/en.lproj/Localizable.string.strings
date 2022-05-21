@@ -5,6 +5,8 @@
   Created by Javier Carrillo Gallego on 21/5/22.
   
 */
-"BubbleApp.features.userpreferences.numbermessages.picker.title" = "Number of messages",
-"BubbleApp.features.userpreferences.numberconversations.picker.title" = "Number of conversations",
-"BubbleApp.features.userpreferences.backgroundcolot.colorpicker.title" = "Background color",
+
+"BubbleApp.features.userpreferences.numbermessages.picker.title" = "Number of messages";
+"BubbleApp.features.userpreferences.numberconversations.picker.title" = "Number of conversations";
+"BubbleApp.features.userpreferences.backgroundcolor.colorpicker.title" = "Background color";
+"BubbleApp.features.conversationpanel.conversationtextfieldview.textfield.text" = "Write your message here";
