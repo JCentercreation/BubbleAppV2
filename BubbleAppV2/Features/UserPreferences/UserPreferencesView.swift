@@ -18,7 +18,7 @@ struct UserPreferencesView: View {
         VStack {
             HStack {
                 Picker(NSLocalizedString("BubbleApp.features.userpreferences.numbermessages.picker.title", comment: ""), selection: $userPreferences.numberOfMessages) {
-                        ForEach(1 ..< 30) {
+                        ForEach(1 ..< 100) {
                             Text("\($0)")
                         }
                 }
