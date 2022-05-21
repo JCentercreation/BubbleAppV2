@@ -18,6 +18,8 @@
 		9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938328394433007C9708 /* UserPreferencesModel.swift */; };
 		9919938628394588007C9708 /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938528394588007C9708 /* UserPreferencesView.swift */; };
 		9919938A28394849007C9708 /* Localizable.string.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919938C28394849007C9708 /* Localizable.string.strings */; };
+		99199390283949F5007C9708 /* BubbleMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919938F283949F5007C9708 /* BubbleMessageView.swift */; };
+		9919939228394A31007C9708 /* BubbleMessageSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919939128394A31007C9708 /* BubbleMessageSentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		9919938528394588007C9708 /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
 		9919938B28394849007C9708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.string.strings; sourceTree = "<group>"; };
 		9919938D2839484A007C9708 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.string.strings; sourceTree = "<group>"; };
+		9919938F283949F5007C9708 /* BubbleMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMessageView.swift; sourceTree = "<group>"; };
+		9919939128394A31007C9708 /* BubbleMessageSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMessageSentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				9919937E28394354007C9708 /* BubbleShapes.swift */,
+				9919938F283949F5007C9708 /* BubbleMessageView.swift */,
+				9919939128394A31007C9708 /* BubbleMessageSentView.swift */,
 			);
 			path = Bubbles;
 			sourceTree = "<group>";
@@ -315,10 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9919935528394295007C9708 /* ContentView.swift in Sources */,
+				9919939228394A31007C9708 /* BubbleMessageSentView.swift in Sources */,
 				9919937F28394354007C9708 /* BubbleShapes.swift in Sources */,
 				9919938628394588007C9708 /* UserPreferencesView.swift in Sources */,
 				9919935328394295007C9708 /* BubbleAppV2App.swift in Sources */,
 				9919938428394433007C9708 /* UserPreferencesModel.swift in Sources */,
+				99199390283949F5007C9708 /* BubbleMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
