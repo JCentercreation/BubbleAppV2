@@ -15,27 +15,29 @@ struct ConversationsPanelView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-            if userData.userConversation.count <= userPreferences.numberOfMessages {
-                ForEach(userData.userConversation, id: \.self) { message in
-                    if message.messageType == .left {
-                        HStack {
-                            BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
-                            Spacer()
-                        }
-                    } else {
-                        HStack {
-                            Spacer()
-                            BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+            ScrollView {
+                Spacer()
+                if userData.userConversation.count <= userPreferences.numberOfMessages {
+                    ForEach(userData.userConversation, id: \.self) { message in
+                        if message.messageType == .left {
+                            HStack {
+                                BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+                                Spacer()
+                            }
+                        } else {
+                            HStack {
+                                Spacer()
+                                BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+                            }
                         }
                     }
-                }
-            } else {
-                ForEach(userData.userConversation[(userData.userConversation.count - userPreferences.numberOfMessages - 1)..<userData.userConversation.count], id: \.self) { message in
-                    BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+                } else {
+                    ForEach(userData.userConversation[(userData.userConversation.count - userPreferences.numberOfMessages - 1)..<userData.userConversation.count], id: \.self) { message in
+                        BubbleMessageSentView(message: message.content, bubbleType: message.messageType)
+                    }
                 }
             }
-            Spacer()
+
             ConversationTextFieldView()
             UserPreferencesView()
         }.background(userPreferences.backgroundColor)
